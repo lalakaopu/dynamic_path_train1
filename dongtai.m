@@ -1,6 +1,7 @@
 function Pz=dongtai(v,range,dstartx,dstarty,vx,vy)
 global h1
 global h2
+global h3
 persistent pstartx;
 persistent pstarty;
 
