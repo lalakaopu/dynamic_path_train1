@@ -34,6 +34,8 @@ rout_length=0;
 rout=[startXY];
 
 %%  main
+tic;
+ii=1;
 while ( sqrt((endXY(1)-rout_now(1))^2+(endXY(2)-rout_now(2))^2)>=2*search_range )
     Pt8=point8(rout_now,endXY,search_range);
     routLength=inf;
@@ -53,7 +55,13 @@ rout_now=preRout;
 rout=[rout;rout_now];
 rout_length=rout_length+search_range;
 circle(rout_now(1),rout_now(2),3);
-dongp=dongtai(3,12,80,0,0,1);
+if ii>22
+    
+    dongp=dongtai(3,12,80,0,-0.1,0);
+else
+    dongp=dongtai(3,12,80,0,0,1);
+end
+ii=ii+1;
 pause(0.1);
 delete(h1);
 delete(h2);
