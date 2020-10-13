@@ -10,6 +10,7 @@ close all
 global dongp;
 dongp=[80,0,10];
 global h1;
+global h2;
 format short
 startXY=[0 0];
 endXY=[100 100];
@@ -54,6 +55,7 @@ circle(rout_now(1),rout_now(2),3);
 dongp=dongtai(3,12,80,0,0,1);
 pause(0.1);
 delete(h1);
+delete(h2);
 end
 
 %% result output
