@@ -9,12 +9,16 @@ close all
 
 global dongp;
 dongp=[80,0,10];
+global dongp1;
+dongp1=[150,150,10];
 global h1;
 global h2;
 global h3;
+global h4
+global h5
 format short
 startXY=[0 0];
-endXY=[100 100];
+endXY=[150 150];
 search_range=4;
 
 
@@ -28,7 +32,7 @@ r=rectangle('position',[obs_circlr_Center(1)-obs_circle_Range,obs_circlr_Center(
 figure(1);
 hold on 
 r.FaceColor=[0 0 0];%% wrong hear Facecolo
-axis([0 100 0 100]);
+axis([0 200 0 200]);
 rout_now=startXY;
 rout_length=0;
 rout=[startXY];
@@ -62,10 +66,13 @@ else
     dongp=dongtai(3,12,80,0,0,1);
 end
 ii=ii+1;
+dongp1=dongtai2(2,12,150,150,0.5,0.5);
 pause(0.1);
 delete(h1);
 delete(h2);
 delete(h3);
+delete(h4);
+delete(h5);
 end
 
 %% result output

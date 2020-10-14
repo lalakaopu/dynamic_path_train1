@@ -34,7 +34,7 @@ py(2)=pstarty-3;
 py(3)=pstarty-3;
 
 h2=patch(px,py,[0.1 0.2 0.3]);
-axis([0 100 0 100]);
+axis([0 200 0 200]);
 
 
 
